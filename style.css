@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    background-image: url("photos/bg.png");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 100%;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 200px;
+
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    max-height: 100px;
+}
+nav ul li{
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a{
+    position: relative;
+    padding: 5px 5px;
+}
+nav ul li a:hover{
+    color: #F20C0C;
+}
+nav ul li a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #F20C0C;
+    transition: .25s;
+    bottom: 0;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+
+.content{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.content h1{
+    color: #d9554c;
+    font-size: 75px;
+    font-weight: 900;
+    line-height: 90px;
+    text-transform: inherit;
+    width: 70%;
+}
+.content h1,h2 {
+    color: #d9554c;
+}
+
+
+.content p{
+    color: #d9554c;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 50px;
+    text-align: justify;
+    width: 70%;
+}
+.content ul {
+    color: #d9554c;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 50px;
+    text-align: justify;
+    width: 70%;
+}
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 20px;
+}
+
+#medicinsko {
+    max-width: 35%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#mapa {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#chess {
+    max-width: 70%;
+    padding-top: 350px;
+    padding-left: 500px;
+}
+
+
